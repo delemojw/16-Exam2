@@ -159,7 +159,7 @@ def problem2(n, seq):
         if seq[k] < n:
             s = s + [seq[k]]
             if len(s) == 3:
-                break
+                pass
     if len(s) < 3:
         return 'Too few'
     else:

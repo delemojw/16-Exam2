@@ -19,7 +19,7 @@ def main():
     print(' to run the testing code as you complete the TODOs.')
 
     run_test_problem4a()
-    # run_test_problem4b()
+    run_test_problem4b()
 
 
 ###############################################################################
@@ -164,7 +164,7 @@ def problem4a(strings):
     return -1
 
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
@@ -259,8 +259,16 @@ def problem4b(list_of_tuples_of_strings):
     Type hints:
       :type [str]
     """
+    for k in range(len(list_of_tuples_of_strings)):
+        string = list_of_tuples_of_strings[k]
+        for n in range(len(string)):
+            str = string[n]
+            if is_prime(len(str)) == True:
+                return True
+
+    return False
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #          Tests have been written for you (above).
     #    *** IMPORTANT:  THIS PROBLEM COUNTS ONLY 2 POINTS
     #                    AND HAS AN ELEGANT SOLUTION.  DO NOT GET STUCK ON IT!
